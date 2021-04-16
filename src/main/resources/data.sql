@@ -308,13 +308,14 @@ INSERT INTO event_film(id_event,id_film) VALUES (1,1),(2,2),(3,3),(4,4),(5,5),(6
 (11,2),(12,3),(13,4),(14,5),(15,6),(16,7),(17,8),(18,3),(18,4),(18,5),(19,1),(19,2),(20,7),(20,8),(20,9);
 
 /* Users */
+/* Password@123, Password@321, Qwerty67&*/
 INSERT INTO user(client_card_id,date_of_birth,email,expiration_date,firstname,lastname,password,telephone_number)
 VALUES ("V12345678",'1999-05-25',"email1@email.com",'2021-09-26',"John","Trump",
-'{bcrypt}$2y$12$znPrlGoOgdwR0AjxszPgFe7xZ1D4obY4g4NfrknPBQ0xFN3kZn7Fu',"+48123456789"),
+'{bcrypt}$2y$12$bEZ2Wk2Qx6Rcny8CMbQsRuB3bu/2o44va5/6V0yMg7d2n9NenvTVy',"+48123456789"),
 ("P12345678",'2004-11-13',"email2@email.pl",'2021-09-26',"Gary","Johnson",
-'{bcrypt}$2y$12$XqHq0JY/ripbJwaD6mHMoOQncp9BX7MSsZccmnzRDOQIkQzrjOpOi',"+48-987-654-321"),
+'{bcrypt}$2y$12$Nqt6PEGOLDLfTIkp8oFJsueb22WYcT/i.Vd1ulOfI9nzcgU4zQU4i',"+48-987-654-321"),
 ("S12345678",'2008-02-15',"email3@email.pl",'2021-09-26',"Jessica","Brown",
-'{bcrypt}$2y$12$GEjgpskDuolYMdjzZxcRR.VNCz6klbBfAuxij60JmMZB.nznT4pEy',"+48 111 456 999");
+'{bcrypt}$2y$12$ZJOIBOSFA1BCCL7qFtha9.mhkEznk7t.mNDYyyBtlex4xoKZIRG9C',"+48 111 456 999");
 
 /* User-role */
 INSERT INTO user_role(id_user,id_role) VALUES (3,1),(2,1),(2,2),(1,1),(1,2),(1,3);

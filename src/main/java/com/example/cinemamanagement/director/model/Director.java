@@ -36,7 +36,7 @@ public class Director extends BaseEntity {
 
     /* RELATIONS */
 
-    @OneToMany(mappedBy = "director", fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @OneToMany(mappedBy = "director", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     List<Film> films;
