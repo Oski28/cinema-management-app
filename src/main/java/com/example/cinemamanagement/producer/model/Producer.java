@@ -2,7 +2,6 @@ package com.example.cinemamanagement.producer.model;
 
 import com.example.cinemamanagement.film.model.Film;
 import com.example.cinemamanagement.shared.BaseEntity;
-import jdk.dynalink.linker.LinkerServices;
 import lombok.*;
 
 import javax.persistence.*;
@@ -24,7 +23,7 @@ public class Producer extends BaseEntity {
 
     /* RELATIONS */
 
-    @OneToMany(mappedBy = "producer", fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @OneToMany(mappedBy = "producer", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     List<Film> films;
