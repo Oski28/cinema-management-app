@@ -19,6 +19,7 @@ public class ProducerShowConverter extends BaseConverter<Producer, ProducerShowD
 
             Producer producer = new Producer();
 
+            producer.setId(dto.getId());
             producer.setName(dto.getName());
 
             return producer;
@@ -33,6 +34,7 @@ public class ProducerShowConverter extends BaseConverter<Producer, ProducerShowD
 
             ProducerShowDto dto = new ProducerShowDto();
 
+            dto.setId(producer.getId());
             dto.setName(producer.getName());
             dto.setFilmTitles(producer.getFilms().stream().map(Film::getTitle).collect(Collectors.toList()));
 
