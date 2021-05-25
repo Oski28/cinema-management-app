@@ -42,6 +42,7 @@ public class DirectorShowConverter extends BaseConverter<Director, DirectorShowD
             dto.setLastName(director.getLastName());
             dto.setDateOfBirth(director.getDateOfBirth());
             dto.setFilmTitles(director.getFilms().stream().map(Film::getTitle).collect(Collectors.toList()));
+
             return dto;
         };
     }

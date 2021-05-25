@@ -67,7 +67,6 @@ public class DirectorController extends BaseController<Director> {
     @Secured(value = "ROLE_EMPLOYEE")
     @PutMapping("/{id}")
     public ResponseEntity<Void> update(@PathVariable final Long id, @RequestBody @Valid final DirectorDto dto) {
-        System.out.println(dto);
         return super.update(id, this.directorConverter.toEntity().apply(dto));
     }
 
